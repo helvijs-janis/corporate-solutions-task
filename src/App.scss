@@ -1,0 +1,26 @@
+@use '@carbon/react';
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+
+  &__row {
+    + .app__row {
+      margin-top: 10px;
+    }
+
+    &--checkbox {
+      align-items: start;
+    }
+
+    &--divider {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+    }
+  }
+}
